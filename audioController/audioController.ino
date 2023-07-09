@@ -24,9 +24,11 @@ void setup() {
     Serial.println("SD fail");
     return;  // don't do anything more if not
   }
-  tmrpcm.setVolume(3);
+  tmrpcm.setVolume(5);
   // tmrpcm.play("jupiter.wav");
   // tmrpcm.loop(1);
+  tmrpcm.loop(1);
+  tmrpcm.play("cat.wav");
 }
 
 void loop() {
